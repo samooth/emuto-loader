@@ -1,0 +1,22 @@
+{
+  "name": "emuto-loader",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:kantord/emuto-loader.git",
+  "author": "Daniel Kantor <git@daniel-kantor.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "emuto": "^1.11.2"
+  },
+  "devDependencies": {
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
+    "emuto": "^1.11.2",
+    "jest": "^23.6.0",
+    "memory-fs": "^0.4.1",
+    "webpack": "^4.20.2"
+  }
+}
