@@ -1,11 +1,12 @@
 {
   "name": "emuto-loader",
   "version": "0.0.0-development",
-  "main": "src/loader.js",
+  "main": "lib/loader.js",
   "repository": "git@github.com:kantord/emuto-loader.git",
   "author": "Daniel Kantor <git@daniel-kantor.com>",
   "license": "MIT",
   "scripts": {
+    "build": "yarn babel src/ -d lib/",
     "test": "jest",
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release"
@@ -14,13 +15,14 @@
     "emuto": "^1.11.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-jest": "^23.6.0",
     "babel-preset-env": "^1.7.0",
     "emuto": "^1.11.2",
     "jest": "^23.6.0",
     "memory-fs": "^0.4.1",
-    "webpack": "^4.20.2",
+    "semantic-release": "^15.9.17",
     "travis-deploy-once": "^5.0.9",
-    "semantic-release": "^15.9.17"
+    "webpack": "^4.20.2"
   }
 }
