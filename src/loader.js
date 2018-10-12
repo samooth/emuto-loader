@@ -1,9 +1,10 @@
 import compiler from 'emuto/lib/compiler';
 
-export default source => {
+export default function(source) {
   if (this.cacheable) this.cacheable();
   return `
-    import builtins from 'emuto/lib/builtins';
-    export default (${compiler(source)})(builtins);
+    module.exports = { default: (${compiler(
+      source,
+    )})(require('emuto/lib/builtins.js'))};
   `.trim();
-};
+}

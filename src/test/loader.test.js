@@ -8,8 +8,7 @@ test('outputs correct JavaScript', async () => {
 
   expect(output).toBe(
     `
-    import builtins from 'emuto/lib/builtins';
-    export default (${source})(builtins);
+    module.exports = { default: (${source})(require('emuto/lib/builtins.js'))};
   `.trim(),
   );
 });
