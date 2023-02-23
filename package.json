@@ -1,7 +1,7 @@
 {
   "name": "emuto-loader",
   "version": "0.0.1",
-  "type": "module",
+  "type": "commonjs",
   "main": "lib/loader.js",
   "repository": "git@github.com:kantord/emuto-loader.git",
   "author": "Daniel Kantor <git@daniel-kantor.com>",
