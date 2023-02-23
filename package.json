@@ -1,6 +1,6 @@
 {
   "name": "emuto-loader",
-  "version": "0.0.0-development",
+  "version": "0.0.1",
   "type": "module",
   "main": "lib/loader.js",
   "repository": "git@github.com:kantord/emuto-loader.git",
